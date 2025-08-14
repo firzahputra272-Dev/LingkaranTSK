@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tantangan Lingkaran Sempurna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="website-name">
+      <span class="circle-dot"></span>
+      <span class="title-text">Lingkaran<span class="highlight">Tsk</span></span>
+    </div>
+    <div class="settings">
+      <button id="toggle-music"class="settings-btn"alt="music">musik</button>
+  </header>
+
+<main>
+    <div id="instruction" class="modal">
+      <h1>Aturan Permainan</h1>
+      <p>Gambar lingkaran sempurna yang sesuai titik tengah. Tidak boleh terlalu besar atau kecil!</p>
+      <button id="start-btn">Mulai</button>
+    </div>
+
+    <div id="name-modal" class="modal hidden">
+      <h2>Masukkan Nama</h2>
+      <input type="text" id="player-name" placeholder="Nama kamu..." />
+      <button id="submit-name">Lanjut</button>
+    </div>
+
+    <canvas id="canvas" class="hidden"></canvas>
+
+    <div id="result" class="hidden">
+      <div id="circle-result"></div>
+      <h2 id="final-name"></h2>
+      <h1 id="score"></h1>
+      <p id="motivation"></p>
+      <button id="restart">Ulang</button>
+      <button id="share">Bagikan</button>
+    </div>
+  </main>
+
+  <!-- Suara -->
+  <audio id="fail-sound" src="fail.mp3"></audio>
+  <audio id="success-sound" src="success.mp3"></audio>
+  <audio id="special-sound" src="special.mp3"></audio>
+  <audio id="bg-music" src="Music.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
